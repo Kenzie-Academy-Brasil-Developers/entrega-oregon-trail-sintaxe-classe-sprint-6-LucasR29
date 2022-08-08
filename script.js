@@ -49,6 +49,10 @@ class Wagon{
         }
         return `Avaiable food: ${total}`
     }
+
+    clearWagon(){
+        return this.passengers = []
+    }
 }
 
 let wagon = new Wagon(2)
@@ -74,3 +78,4 @@ juan.eat()
 
 console.log(wagon.shouldQuarentine())
 console.log(wagon.totalFood())
+console.log(`Existe uma função chamada clearWagon para caso precise limpar os locais para fazer testes`)
