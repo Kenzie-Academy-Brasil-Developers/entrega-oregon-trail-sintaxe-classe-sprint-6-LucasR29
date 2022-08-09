@@ -19,7 +19,7 @@ class Wagon{
         this.passengers = []
     }
 
-    getAvaiableSeatCount(){
+    getAvailableSeatCount(){
         return `Avaible seats ${this.capacity}`
     }
 
@@ -61,16 +61,16 @@ let henrietta = new Traveler('Henrietta')
 let juan = new Traveler('Juan')
 let maude = new Traveler('Maude')
 
-console.log(wagon.getAvaiableSeatCount())
+console.log(wagon.getAvailableSeatCount())
 
 wagon.join(henrietta)
 
-console.log(wagon.getAvaiableSeatCount())
+console.log(wagon.getAvailableSeatCount())
 
 wagon.join(juan)
 wagon.join(maude)
 
-console.log(wagon.getAvaiableSeatCount())
+console.log(wagon.getAvailableSeatCount())
 
 henrietta.hunt()
 juan.eat()
