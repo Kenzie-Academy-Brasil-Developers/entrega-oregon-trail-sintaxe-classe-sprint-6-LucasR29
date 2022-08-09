@@ -33,7 +33,7 @@ class Wagon{
         }
     }
 
-    shouldQuarentine(){
+    shouldQuarantine(){
         for(let i = 0; i < this.passengers.length; i++){
             if(this.passengers[i].isHealthy === false){
                 return `${this.passengers[i].name} is sick, quarentine: ${true}`
@@ -76,6 +76,6 @@ henrietta.hunt()
 juan.eat()
 juan.eat()
 
-console.log(wagon.shouldQuarentine())
+console.log(wagon.shouldQuarantine())
 console.log(wagon.totalFood())
 console.log(`Existe uma função chamada clearWagon para caso precise limpar os locais para fazer testes`)
